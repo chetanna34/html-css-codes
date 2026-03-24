@@ -1,0 +1,177 @@
+/*Reset and Generl Styles*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif
+}
+
+body{
+  color: royalblue;
+  background: #f9f9f9;
+  line-height: 1.6;
+}
+
+/*Header*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ebeaea;
+  padding: 1rem 3rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: fuchsia;
+}
+.logo span{
+  color: #0077ff;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav li{
+  margin-left: 1.5rem;
+}
+
+nav a{
+  text-decoration: none;
+  color:fuchsia;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a:hover{
+  color: royalblue;
+}
+
+/*Hero Section*/
+.hero{
+  text-align: center;
+  padding: 4rem 2rem;
+  background: khaki;
+  color: fuchsia;
+}
+.hero span{
+  color: #0077ff;
+}
+
+.hero h1{
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+/*Posts Section*/
+.posts{
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.posts h2{
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.post-grid{
+  display: grid;
+  grid-template-columns: repeat(autofit minmax(280px 1fr));
+  gap: 2rem;
+}
+
+.post{
+background: khaki;
+border-radius: 10px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+overflow: hidden;
+transition: transform 0.3s;
+}
+
+.post:hover{
+  transform: translateY(-5px);
+}
+.post img{
+  width: 35%;
+  object-fit: cover;
+}
+.post-content{
+  padding: 1.5rem;
+  text-align: left;
+}
+.post-content h3{
+  color: #0077ff;
+  text-decoration: underline;
+}
+
+.meta{
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.excerpt{
+  margin: 1rem 0;
+  color: #444;
+}
+
+.read-more{
+  text-decoration: none;
+  color: #0077ff;
+  font-size: 500;
+}
+
+/*About  Section*/
+.about{
+  background: khaki;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.about h2{
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+ 
+/*Contact Section*/
+.contact{
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.contact form{
+  margin-top: 1rem;
+}
+.contact input{
+  padding: 0.8rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact button{
+  background: #ccc;
+  color: royalblue;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.contact button:hover{
+  background: firebrick;
+}
+
+/*Footer*/
+footer{
+  background: khaki;
+  color: #444;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+

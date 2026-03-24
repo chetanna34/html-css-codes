@@ -1,0 +1,55 @@
+*, *:before ,*:after{
+ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+html{
+  font-size: 100%;
+  margin-bottom: 200px;
+}
+ body{
+  -webkit-font-smoothing:antialiased;
+  color:#333332;
+  font-family: lora, serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+}
+
+.skill-set li:hover{ 
+  background-color: #3498db;
+}
+
+h1{
+  color: rgba(0, 0,0, .75);
+}
+
+.wrapper{
+  height: 100%;
+}
+.left{
+  background-color: rgba(0, 0,0,0.25);
+border-right:1px solid rgba(0,0,0,.05) ;
+float: right ;
+height: 100%;
+margin-left: -1px;
+min-width: 350px;
+
+width:33.33px;
+} 
+
+.right{
+  float: right;
+  height: 100%;
+  position: relative;
+  width: 66.66%;
+}
+
+.notes{
+  font-weight: bolder;
+  margin-bottom: 100px;
+  color: purple;
+  backdrop-filter: initial;
+  border-color: aqua;
+}
+

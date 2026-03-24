@@ -1,0 +1,195 @@
+*{
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+  color: peru ;
+  background: #f9f9f9;
+  line-height: 1.6;
+}
+
+/*Header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0077ff;
+}
+
+nav ul{
+  display: flex;
+  list-style: none ;
+}
+
+nav ul li{
+  margin-left: 1.5rem;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav ul li a:hover{
+  color: #0077ff;
+}
+
+/*Hero Section*/
+.hero{display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background: whitesmoke;
+  flex-wrap: wrap;
+}
+
+.hero-text{
+  max-width: 500px;
+}
+
+.hero h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span{
+color: #0077ff;
+}
+
+.hero p{
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.hero img{
+  max-width: 400px;
+  width: 100%;
+}
+
+.btn{
+  background: #0077ff;
+  color: white;
+  padding: 0.7 rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: dotted;
+  font-weight: bold;
+}
+ 
+.btn :hover{
+  background: #005bcc;
+}
+
+/*Features Section*/
+.features{
+  padding: 3rem;
+  text-align: center;
+}
+ .feature-grid{
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+ }
+
+.feature{
+  background: #005c;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0,0.1);
+  margin-bottom: 10px;
+}
+
+/*Pricing Section*/
+.pricing{
+  background-color: #fff;
+  padding: 3rem;
+  text-align: center;
+}
+
+.price-grid{
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.price-card{
+  background: #f0f7;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1;)
+}
+
+.price-card.popular{
+  border: 2px solid #0077ff;
+}
+
+.price{
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.price-card ul{
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.price-card li{
+  margin-bottom: 0.5rem;
+}
+
+/*Reviews*/
+.reviews{
+max-width: 500px;
+margin: 1rem auto;
+background: white;
+padding: 1.5rem;
+border-radius: 10px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1;)
+}
+
+/*Contact*/
+.contact{
+  text-align: center;
+  padding: 3rem;
+}
+.contact form{
+  margin-top: 1rem;
+}
+
+.contact input{
+  padding: 0.7rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius:5px;
+}
+
+.contact button{
+  margin-left: 0.5rem;
+  border: none;
+}
+
+/*Footer*/
+footer{
+  background: #0077ff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}

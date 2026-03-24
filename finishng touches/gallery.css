@@ -1,0 +1,172 @@
+/*Reset and General Styles*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body{
+  color: black;
+  line-height: 1.6;
+}
+
+/*Header*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 1rem 3rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+ .logo{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: darkblue;
+ }
+
+ .logo span{
+  color: firebrick;
+ }
+
+ nav ul{
+  display: flex;
+  list-style: none;
+ }
+ nav li{
+  margin-left: 1.5rem;
+ } 
+ nav a{
+  text-decoration: none;
+  color: darkblue;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1.3rem;
+ }
+ nav a:hover{
+  color: firebrick;
+ }
+
+ /*Hero Section*/
+ .hero{
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, darkblue,firebrick);
+  color: #ffffff;
+}
+ .hero h1{
+  font-size: 2.5rem;
+  margin-bottom: 0;
+ }
+ .hero p{
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+ }
+
+ /*Gallery Section*/
+ .gallery{
+  padding: 3rem 2rem;
+  text-align: center;
+ }
+ .gallery h2{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+ }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(260px,1fr));
+    gap:1.5rem;
+  }
+  figure{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 3rem;
+    width: 100rem;
+    justify-content: center;
+    
+  }
+  figure:hover{
+    transform: scale(1.03);
+  }
+
+  figure img{
+    width:30%;
+    object-fit: cover; 
+  }
+
+  figcaption{
+    padding: 0.8rem;
+    font-weight: bold;
+    color: firebrick;
+  }
+  figcaption span{
+    color: firebrick;
+  }
+  
+  /*About Section*/
+  .about{
+    background:white;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+.about h2{
+  margin-bottom: 1rem;
+}
+
+/*Contact Section*/
+.contact{
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact textarea{
+  height: 120px;
+  resize: none;
+}
+
+.contact button{
+  background: darkcyan;
+  color: darkblue;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+  
+}
+.contact button:hover{
+  background: firebrick;
+}
+/*footer*/
+footer{
+  background: white;
+  color: firebrick;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
